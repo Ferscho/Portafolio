@@ -5,15 +5,17 @@
 }
 
 .avatar {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;   /* círculo */
+  width: 200px;             /* Ajustar tamaño en móvil */
+  height: auto;
+  flex-shrink: 0; 
   object-fit: cover;    /* recorta sin deformar */
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .about-text {
-  flex: 1;              /* ocupa el resto del espacio */
+  flex: 1;              /* Permitir que el texto ocupe el espacio disponible */
+  text-align: center;  /* Centrar el texto */
+  line-height: 1.6; /* Mejorar legibilidad */
 }
 
 .about-text p {
@@ -199,7 +201,6 @@
 
 #experience {
     padding: 40px 20px;
-    background: #f9f9f9;
 }
 
 .experience-grid {
@@ -237,7 +238,6 @@
 
 #contact {
     padding: 40px 20px;
-    background: #f9f9f9;
 }
 
 #contactForm {

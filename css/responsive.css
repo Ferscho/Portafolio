@@ -54,28 +54,29 @@
     background: #0f0f1a;
 }
 
-/* Estilos generales (desktop) */
-.about-me {
-  font-size: 18px;
-  text-align: left;
-  max-width: 800px;
-  margin: auto;
-}
 
 /* Estilos para pantallas pequeñas (celulares) */
-@media (max-width: 600px) {
-  .about-me {
-    font-size: 16px;       /* Texto más legible en móvil */
-    text-align: center;    /* Centrar el texto */
-    padding: 10px;         /* Espaciado interno */
-    max-width: 100%;       /* Que ocupe todo el ancho */
+@media (max-width: 760px) {
+   .about-container {
+
+    flex-direction: column;
+    text-align: center;
+   }
+  .about-text {
+    text-align: center;  /* Centrar el texto */
+    font-size: 16px;     /* Ajustar tamaño de fuente */
+    line-height: 1.5;    /* Mejorar legibilidad */
+  }
+
+  .avatar {
+    width: 200px;             /* Ajustar tamaño en móvil */
+    height: auto;
+    flex-shrink: 0;          /* Evitar que se reduzca demasiado */
+
+  }
+  hr´{
+    margin: 10px auto;       /* Espacio vertical */
+    width: 50%;              /* Ancho del separador */
   }
 }
 
-@media (max-width: 600px) {
-  .about-me img {
-    display: block;
-    margin: 0 auto 15px auto; /* Centrar imagen y separarla del texto */
-    width: 120px;             /* Ajustar tamaño en móvil */
-  }
-}
