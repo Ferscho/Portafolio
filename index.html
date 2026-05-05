@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="icons/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
+
+    
+</head>
+<body>
+    <header>
+        <canvas id="headerCanvas"></canvas>
+        <div class="header-content">
+            <h1>Fernando Suarez Chora</h1>
+            <p>Desarrollador Java full stack jr </p>
+            <div class="social-links">
+                <a href="mailto:fschespkr@gmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/fernando-suarez-chora-953005199/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Ferscho" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="#about">Sobre mí</a>
+        <a href="#experience">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+        <button id="themeToggle">Modo Oscuro</button>
+    </nav>
+    
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <div class="about-container">
+            <img src="pictures/Avatar.png" alt="Foto de perfil de Fernando Suarez Chora" class="avatar">
+            <div class="about-text">
+                <p>Soy un desarrollador web apasionado, especializado en la creación de experiencias digitales modernas, 
+                    responsivas y centradas en el usuario. Domino HTML, CSS y JavaScript, y disfruto transformar ideas en interfaces 
+                    funcionales y atractivas. Mi enfoque combina buenas prácticas de desarrollo con un fuerte sentido de diseño, 
+                    logrando sitios web que no solo funcionan, sino que inspiran confianza y generan impacto.</p>
+            </div>
+        </div>
+
+        <div class="cv">
+            <h3>Currículum Vitae</h3>
+            <a href="Docs/FernandoSuarezChora.pdf" target="_blank">
+                <button>Ver CV en PDF</button>
+            </a>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Experiencia Laboral</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <h3>Desarrollador Full Stack Jr</h3>
+                <p><strong>Empresa: Tinta Nómada</strong> | 2023 - Presente</p>
+                <p>Desarrollo de plataforma e-commerce con Java, Spring Boot y MySQL. Implementé carrito de compras y optimicé UX.</p>
+            </div>
+            <div class="experience-card">
+                <h3>Desarrollador Web Freelance</h3>
+                <p><strong>Proyectos Personales</strong> | 2022 - 2023</p>
+                <p>Creación de landing pages y aplicaciones web usando HTML, CSS y JS. Participé en hackathons.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Proyectos</h2>
+
+        <div class="project-grid">
+    
+        <div class="project-card">
+            <img src="pictures/tintaNomada.jpeg" alt="Tinta Nómada" class="img-right">
+            <h3>Tinta Nómada</h3>
+            <p>
+                Plataforma de e-commerce para productos creativos.
+                Participé como FullStack Developer implementando carrito de compras,
+                integración de pagos y optimización de UX con metodologías ágiles.
+            </p>
+            <p><strong>Tecnologías:</strong> Java, Spring Boot, MySQL, HTML, CSS, JS</p>
+            <a href="https://github.com/usuario/tinta-nomada" target="_blank" class="btn-link">💻 Ver en GitHub</a>
+        </div>
+    
+        <div class="project-card">
+            <img src="pictures/hakaton.png" alt="Hakaton_landing_page" class="img-right">
+            <h3>Hackaton landing page </h3>
+            <p>
+                Landing Page Deportiva
+                Landing page interactiva con diseño responsivo, animaciones y carrito dinámico para productos deportivos.
+        
+            </p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, JS</p>
+            <a href="https://github.com/gioTlahuiz/Hackathon-1" target="_blank" class="btn-link">💻 Ver en GitHub</a>
+            <a href="https://giotlahuiz.github.io/Hackathon-1/" target="_blank" class="btn-link">🌐 Ver Deploy</a>
+        </div>
+
+        <div class="project-card">
+            <img src="pictures/Agenda.png" alt="Agenda" class="img-right">
+            <h3>Agenda</h3>
+            <p>
+                Aplicación de consola desarrollada en Java para gestionar una agenda de contactos.
+                Incluye funcionalidades como añadir, listar, buscar y eliminar contactos, además de verificar si la agenda está llena o
+                cuántos espacios libres quedan.
+            </p>
+            <p><strong>Tecnologías:</strong> Java</p>
+            <a href="https://github.com/marianamar19/Hackathon-2" target="_blank" class="btn-link">💻 Ver en GitHub</a>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+    
+            <div class="skill">
+                <h3><i class="fa-brands fa-html5"></i> HTML5</h3>
+                <p>Estructura semántica y accesibilidad web</p>
+            </div>
+    
+            <div class="skill">
+                <h3><i class="fa-brands fa-css3-alt"></i> CSS3</h3>
+                <p>Diseño responsivo y animaciones</p>
+            </div>
+    
+            <div class="skill">
+                <h3><i class="fa-brands fa-js"></i> JavaScript</h3>
+                <p>Programación interactiva y dinámicas</p>
+            </div>
+    
+            <div class="skill">
+                <h3><i class="fa-brands fa-java"></i> Java</h3>
+                <p>Desarrollo backend, OOP y aplicaciones full stack</p>
+            </div>
+            
+            <div class="skill">
+                <h3><i class="fab fa-python"></i> Python</h3>
+                <p> Experiencia en programación orientada a objetos, uso de librerías como Pandas y Flask.</p>
+            </div>
+    
+            <div class="skill">
+                <h3><i class="fa-brands fa-git-alt"></i> Git</h3>
+                <p>Control de versiones, ramas y resolución de conflictos</p>
+            </div>
+    
+            <div class="skill">
+                <h3><i class="fa-solid fa-database"></i> MySQL</h3>
+                <p>Modelado de datos, consultas SQL y optimización</p>
+            </div>
+    
+            <div class="skill">
+                <h3><i class="fa-solid fa-leaf"></i> Spring Boot</h3>
+                <p>Framework para aplicaciones Java, APIs REST y microservicios</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <section id="soft-skills">
+        <h2>Habilidades Blandas</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-comments"></i>
+                <h3>Comunicación</h3>
+                <p>Transmitir ideas técnicas de forma clara a equipos y clientes.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-users"></i>
+                <h3>Trabajo en equipo</h3>
+                <p>Colaboración en proyectos ágiles y hackathons.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Resolución de problemas</h3>
+                <p>Encontrar soluciones creativas y prácticas bajo presión.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-sync-alt"></i>
+                <h3>Adaptabilidad</h3>
+                <p>Aprender nuevas tecnologías y ajustarse a distintos entornos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu email" required>
+            <textarea id="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

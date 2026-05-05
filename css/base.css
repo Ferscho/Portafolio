@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* Colores de Marca */
+  --primary: #667eea; /* violeta suave */
+  --secondary: #764ba2; /* violeta más oscuro */
+  --accent: #ffcc00; /* amarillo brillante */
+  --terminal-green: #00ffcc; /* verde agua tipo terminal */
+  /* Colores de Fondo y texto */
+  --bg-body: #ffffff; /* blanco puro para el fondo */
+  --bg-secction: #f9f9f9; /* gris muy claro para secciones */
+  --bg-card: #ffffff; /* blanco para tarjetas */
+  --text-main: #333333; /* gris oscuro para texto principal */
+  --text-muted: #666666; /* gris medio para texto secundario */
+  /* Efectos */
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra suave para tarjetas */
+  --transition: all 0.3s ease; /* transición suave para interacciones */
+}
+
+html{
+  scroll-behavior: smooth; /* desplazamiento suave al hacer clic en enlaces */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-body);
+    transition: background-color 0.4s, color 0.4s ease; /* transición suave para cambios de tema */
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header {
+  position: relative;
+  height: 350px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  background: #111; /* fondo oscuro */
+}
+
+header::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.8); /* degradado violeta con opacidad */
+  z-index: 1; /* debajo del contenido del header */
+}
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--secondary), 0 0 40px var(--accent);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 2s forwards;
+}
+
+header p {
+  font-family: 'Source Code Pro', monospace; /* tipografía estilo código */
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--terminal-green); /* verde agua tipo terminal */
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(0,255,204,0.7); /* glow suave */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 2s forwards 0.8s; /* aparece después del nombre */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#headerCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 80px;
+}
+
+nav {
+  background: linear-gradient(90deg, #0f0f1a, #1c1c2b, #2a2a3d); /* degradado oscuro */
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10; /* asegura que esté encima del canvas */
+  border-bottom: 2px solid #667eea; /* línea violeta para estilo */
+}
+
+nav a {
+  color: #fdfdfd; /* blanco fuerte para contraste */
+  margin: 0 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffcc00; /* amarillo brillante para destacar */
+}
+
+#themeToggle {
+    background: #ffcc00;
+    color: #1c1c2b;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#themeToggle:hover {
+    background: #ffd633;
+}
+
+section {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-to-top {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: #764ba2;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
